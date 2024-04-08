@@ -6,9 +6,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class StringCalculatorIntegrationTests {
     @Test
-    public void testWelcomeMessagePrintsCorrectly() {
+    public void testEmptyNumberString() {
 
-        String input = "scalc '0'\nexit";
+        String input = "scalc ''\nexit";
         InputStream inputStream = new ByteArrayInputStream(input.getBytes());
         OutputStream outputStream = new ByteArrayOutputStream();
 
