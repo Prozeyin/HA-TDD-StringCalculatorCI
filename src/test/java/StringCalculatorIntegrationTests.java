@@ -1,4 +1,4 @@
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.io.*;
 
@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class StringCalculatorIntegrationTests {
     @Test
-    public void testWelcomeMessagePrintsCorrectly(){
+    public void testWelcomeMessagePrintsCorrectly() {
 
         String input = "scalc '0'\nexit";
         InputStream inputStream = new ByteArrayInputStream(input.getBytes());
