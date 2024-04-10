@@ -17,4 +17,21 @@ public class StringCalculatorCLITests {
 
         assertEquals("0\nExiting...\n", outputStream.toString());
     }
+
+    @Test
+    public void testEmptyNumberString2() {
+        String input = "scalc ''\nexit";
+        System.setIn(new ByteArrayInputStream(input.getBytes()));
+
+        OutputStream outputStream = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outputStream));
+
+        StringCalculatorCLI calculator = new StringCalculatorCLI();
+        calculator.run();
+
+        assertEquals("0\nExiting...\n", outputStream.toString());
+
+    }
+
+
 }

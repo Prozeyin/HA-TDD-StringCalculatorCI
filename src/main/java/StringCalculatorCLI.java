@@ -8,6 +8,11 @@ public class StringCalculatorCLI {
     private final InputStream inputStream;
     private final OutputStream outputStream;
 
+    public StringCalculatorCLI(){
+        inputStream = System.in;
+        outputStream = System.out;
+    }
+
     public StringCalculatorCLI(InputStream inputStream, OutputStream outputStream){
         this.inputStream = inputStream;
         this.outputStream = outputStream;
