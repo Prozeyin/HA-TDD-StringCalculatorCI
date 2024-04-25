@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        StringCalculatorCLI stringCalculatorCLI = new StringCalculatorCLI(System.in, System.out);
-        stringCalculatorCLI.run();
+        Logger logger = new LoggerStub(); // Replace with the appropriate logger
+        StringCalculatorCLI cli = new StringCalculatorCLI(System.in, System.out, logger);
+        cli.run();
     }
 }
